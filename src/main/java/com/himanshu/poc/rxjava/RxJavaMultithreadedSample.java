@@ -1,15 +1,7 @@
 package com.himanshu.poc.rxjava;
 
-import rx.Emitter;
-import rx.Observable;
-import rx.Scheduler;
-import rx.functions.Action1;
-import rx.schedulers.Schedulers;
-
-import java.util.UUID;
-
 public class RxJavaMultithreadedSample {
-  private static PersonFactory pFactory = new PersonFactory();
+  /*private static PersonFactory pFactory = new PersonFactory();
   public static void main(String[] args) {
     Observable<Person> o = Observable.create(new Action1<Emitter<Person>>() {
       @Override
@@ -26,6 +18,6 @@ public class RxJavaMultithreadedSample {
         System.out.println("Processing "+q+" in thread. "+Thread.currentThread().getName());
         return q;}
       )
-    ).toList().toBlocking().subscribe(val -> System.out.println(val+" in thread. "+Thread.currentThread().getName()));
-  }
+    ).toList().toBlocking().subscribe(val -> System.out.println(val+" in thread. "+Thread.currentThread().getName()));*//*
+  }*/
 }
